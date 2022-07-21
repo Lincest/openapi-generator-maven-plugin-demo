@@ -73,9 +73,9 @@ with feign client as client, for more clients, you can run:
 java -jar openapi-generator-cli-<version>.jar config-help -g java
 ```
 
-to check `library`: 
+to check the key "`library`": 
 
-![image-20220722015801309](readme.assets/image-20220722015801309.png)
+![image-20220722015801309](https://youpai.roccoshi.top/img/202207220209545.png)
 
 ## demo
 
@@ -122,7 +122,7 @@ public class UserApiImpl implements UserApiDelegate {
 
 got: 
 
-![image-20220722015840129](readme.assets/image-20220722015840129.png)
+![image-20220722015840129](https://youpai.roccoshi.top/img/202207220209525.png)
 
 
 
