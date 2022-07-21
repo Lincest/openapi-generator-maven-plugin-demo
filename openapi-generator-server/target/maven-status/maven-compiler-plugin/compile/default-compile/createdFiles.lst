@@ -1,0 +1,11 @@
+com\roccoshi\demo\model\Response.class
+com\roccoshi\demo\services\UserApiImpl.class
+com\roccoshi\demo\controller\demoController.class
+com\roccoshi\demo\MainApplication.class
+com\roccoshi\demo\api\ApiUtil.class
+com\roccoshi\demo\api\UserApi$1.class
+com\roccoshi\demo\api\UserApiDelegate.class
+com\roccoshi\demo\api\UserApiController$1.class
+com\roccoshi\demo\api\UserApi.class
+com\roccoshi\demo\api\UserApiController.class
+com\roccoshi\demo\model\User.class

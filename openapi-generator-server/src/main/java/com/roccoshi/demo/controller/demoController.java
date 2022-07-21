@@ -1,0 +1,13 @@
+package com.roccoshi.demo.controller;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class demoController {
+    @GetMapping("/hello")
+    public ResponseEntity<String> mm() {
+        return ResponseEntity.ok().body("hello world");
+    }
+}

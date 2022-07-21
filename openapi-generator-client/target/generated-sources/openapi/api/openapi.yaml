@@ -1,0 +1,105 @@
+openapi: 3.0.1
+info:
+  description: ""
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  termsOfService: http://swagger.io/terms/
+  title: swagger test
+  version: "0.1"
+servers:
+- url: /api
+paths:
+  /user/save:
+    get:
+      operationId: getUser
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Users'
+          description: get user lists
+      x-accepts: application/json
+    post:
+      description: return init password
+      operationId: saveUser
+      requestBody:
+        content:
+          '*/*':
+            schema:
+              $ref: '#/components/schemas/User'
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Response'
+          description: operate success
+        "400":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Response'
+          description: operate down
+      summary: save user
+      tags:
+      - User
+      x-codegen-request-body-name: user
+      x-contentType: '*/*'
+      x-accepts: application/json
+components:
+  schemas:
+    Response:
+      example:
+        code: code
+        data: '{}'
+        success: true
+        message: message
+      properties:
+        success:
+          type: boolean
+        code:
+          type: string
+        message:
+          type: string
+        data:
+          properties: {}
+          type: object
+      type: object
+    User:
+      example:
+        userStatus: userStatus
+        phone: phone
+        operatorNumber: operatorNumber
+        id: 0
+        userName: userName
+        userNumber: userNumber
+      properties:
+        id:
+          format: int64
+          type: integer
+        userNumber:
+          pattern: \d{8}
+          type: string
+        userName:
+          pattern: ^[a-zA-Z]{1,40}$
+          type: string
+        phone:
+          pattern: (\d{10})?
+          type: string
+        userStatus:
+          type: string
+        operatorNumber:
+          type: string
+      required:
+      - userName
+      - userNumber
+      type: object
+    Users:
+      items:
+        $ref: '#/components/schemas/User'
+      type: array
+x-original-swagger-version: "2.0"
+

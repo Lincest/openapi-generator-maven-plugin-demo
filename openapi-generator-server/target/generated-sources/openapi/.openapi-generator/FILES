@@ -1,0 +1,6 @@
+src/main/java/com/roccoshi/demo/api/ApiUtil.java
+src/main/java/com/roccoshi/demo/api/UserApi.java
+src/main/java/com/roccoshi/demo/api/UserApiController.java
+src/main/java/com/roccoshi/demo/api/UserApiDelegate.java
+src/main/java/com/roccoshi/demo/model/Response.java
+src/main/java/com/roccoshi/demo/model/User.java
