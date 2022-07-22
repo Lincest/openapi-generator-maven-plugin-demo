@@ -2,6 +2,8 @@
 
 > A java [openapi-generator-maven-plugin](https://github.com/OpenAPITools/openapi-generator/tree/dbee2c5a8393142dfb4c70ecf54d1571faf1df52/modules/openapi-generator-maven-plugin) demo
 
+blog: [openapi-generator入门及快速实践](https://blog.roccoshi.top/2022/java/openapi-generator%E7%9A%84%E4%BD%BF%E7%94%A8/)
+
 ## server
 
 with springboot
